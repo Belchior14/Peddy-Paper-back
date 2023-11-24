@@ -5,6 +5,8 @@ const mongoose = require("mongoose");
 // Require the Product model in order to interact with the database
 const Product = require("../models/Product.model");
 
+require("dotenv").config();
+
 
 
 // ℹ️ Sets the MongoDB URI for our app to have access to it.
@@ -128,6 +130,8 @@ const MONGO_URI =
 
   
   ]
+
+  console.log(MONGO_URI)
 
 mongoose
   .connect(MONGO_URI)
