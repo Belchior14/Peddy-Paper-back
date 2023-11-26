@@ -26,16 +26,16 @@ module.exports = (app) => {
   app.set("trust proxy", 1);
 
   // controls a very specific header to pass headers from the frontend
-  app.use(
+/*   app.use(
     cors({
       origin: [FRONTEND_URL],
       credentials: true
     })
-  );
+  ); */
 
 
 
-/*   app.use((req, res, next) => {
+  app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', FRONTEND_URL);
     // Other CORS headers can be set here.
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
@@ -43,7 +43,7 @@ module.exports = (app) => {
     // ...
   
     next();
-  }); */
+  });
 
   // In development environment the app logs
   app.use(logger("dev"));
