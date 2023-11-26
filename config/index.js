@@ -9,11 +9,15 @@ const logger = require("morgan");
 // https://www.npmjs.com/package/cookie-parser
 const cookieParser = require("cookie-parser");
 
+require("dotenv").config();
+
 // ℹ️ Needed to accept requests from 'the outside'. CORS stands for cross origin resource sharing
 // unless the request is made from the same domain, by default express wont accept POST requests
 const cors = require("cors");
 
 const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
+
+console.log(FRONTEND_URL)
 
 // Middleware configuration
 module.exports = (app) => {
@@ -28,6 +32,8 @@ module.exports = (app) => {
       credentials: true
     })
   ); */
+
+
 
   app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', FRONTEND_URL);
