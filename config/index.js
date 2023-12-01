@@ -15,7 +15,7 @@ require("dotenv").config();
 // unless the request is made from the same domain, by default express wont accept POST requests
 const cors = require("cors");
 
-const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
+const FRONTEND_URL = /* process.env.FRONTEND_URL || */ "http://localhost:3000";
 
 console.log(FRONTEND_URL)
 
@@ -26,15 +26,15 @@ module.exports = (app) => {
   app.set("trust proxy", 1);
 
   // controls a very specific header to pass headers from the frontend
-/*   app.use(
+  app.use(
     cors({
       origin: [FRONTEND_URL],
       credentials: true
     })
-  ); */
+  );
 
 
-
+/* 
   app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', FRONTEND_URL);
     // Other CORS headers can be set here.
@@ -43,7 +43,7 @@ module.exports = (app) => {
     // ...
   
     next();
-  });
+  }); */
 
   // In development environment the app logs
   app.use(logger("dev"));
