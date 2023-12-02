@@ -13,7 +13,7 @@ require("dotenv").config();
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
 
 const MONGO_URI =
-  /* process.env.MONGODB_URI || */ "mongodb://127.0.0.1:27017/hms3dprinting";
+  process.env.MONGODB_URI /* || "mongodb://127.0.0.1:27017/hms3dprinting" */;
 
   const products = [{
     name: "Charmander",
@@ -136,6 +136,38 @@ const MONGO_URI =
     link: "https://www.vinted.pt/items/3712252693-adereco-espada-de-legend-of-zelda-master-sword",
     description: ["Reprodução da Master Sword de The Legend of Zelda, meticulosamente impressa em 3D e habilmente pintada à mão.", "Esta imponente espada, com seus impressionantes 1,20 metros de comprimento, captura cada detalhe icônico da lendária arma." , "Sinta a energia lendária enquanto segura esta peça única, que combina a precisão da tecnologia 3D com a arte artesanal para criar uma obra de arte verdadeiramente impressionante."],
     images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1700257906/HMS/espada3_gr0xdd.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1700257905/HMS/espada2_qlzo9z.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1700257904/HMS/espada1_xjfpqj.jpg"] 
+  },
+  {
+    name: "Suporte esponja Homer Simpson",
+    price: 9,
+    quantity:1,
+    link: "https://www.vinted.pt/items/3712230356-suporte-de-esponja-de-cozinha-de-the-simpsons",
+    description: ["Um suporte de esponja para lava-louça do Homer Simpson, impresso em 3D e pintado à mão para adicionar um toque de diversão à sua cozinha."],
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701518410/homerFrente_z9gx6g.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518414/homerTr%C3%A1s_skc13i.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518411/homerLado_bqqixi.jpg"] 
+  },
+  {
+    name: "Capa de Nintendo Switch Minecraft",
+    price: 20,
+    quantity:1,
+    link: "https://www.vinted.pt/items/3712188324-capa-de-nintendo-switch-minecraft",
+    description: ["Conjunto exclusivo de apoios de Dock para Nintendo Switch, cada um uma obra de arte única.", "Impressos em 3D, esses suportes são meticulosamente pintados à mão para refletir detalhes impressionantes.", "Escolha entre uma variedade de estilos, incluindo o mundo pixelado do Minecraft,  um mundo cristalizado , a alegria do Super Mario, o mistério do Octopus, as majestosas  nuvens e o encanto épico de Legend of Zelda." , "Eleve sua experiência de jogo com esses suportes personalizados que combinam funcionalidade e estética."],
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701519114/baseNintendoMineCraftFrente_wcvriy.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519110/baseNintendoMineCraftConsola_txpjrv.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519114/baseNintendoMineCraftFrente_wcvriy.jpg"] 
+  },
+  {
+    name: "Capa de dock de Nintendo Switch Octopus",
+    price: 20,
+    quantity:1,
+    link: "https://www.vinted.pt/items/3712206601-capa-de-dock-de-nintendo-switch-octopus",
+    description: ["Conjunto exclusivo de apoios de Dock para Nintendo Switch, cada um uma obra de arte única.", "Impressos em 3D, esses suportes são meticulosamente pintados à mão para refletir detalhes impressionantes.", "Escolha entre uma variedade de estilos, incluindo o mundo pixelado do Minecraft,  um mundo cristalizado , a alegria do Super Mario, o mistério do Octopus, as majestosas  nuvens e o encanto épico de Legend of Zelda." , "Eleve sua experiência de jogo com esses suportes personalizados que combinam funcionalidade e estética."],
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701518854/baseNintendo1Frente_imjzxf.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518852/baseNintendo1Consola_bhynba.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518851/baseNintendo1Tr%C3%A1s_m2btjt.jpg"] 
+  },
+  {
+    name: "Capa de dock da Nintendo Switch Super Mario",
+    price: 20,
+    quantity:1,
+    link: "https://www.vinted.pt/items/3545176775-capa-de-dock-da-nintendo-switch-super-mario",
+    description: ["Conjunto exclusivo de apoios de Dock para Nintendo Switch, cada um uma obra de arte única.", "Impressos em 3D, esses suportes são meticulosamente pintados à mão para refletir detalhes impressionantes.", "Escolha entre uma variedade de estilos, incluindo o mundo pixelado do Minecraft,  um mundo cristalizado , a alegria do Super Mario, o mistério do Octopus, as majestosas  nuvens e o encanto épico de Legend of Zelda." , "Eleve sua experiência de jogo com esses suportes personalizados que combinam funcionalidade e estética."],
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701519672/baseNintendoSuperMarioFrente_bbjg93.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519673/baseNintendoSuperMarioFrenteII_mgkttk.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519676/baseNintendoSuperMarioFrenteIII_vmmwgn.jpg"] 
   }
 
   
@@ -145,6 +177,10 @@ const MONGO_URI =
 
 mongoose
   .connect(MONGO_URI)
+  .then(async (x) => {
+    await Product.deleteMany()
+    console.log("products deleted")
+  })
   .then( async (x) => {
     await Product.insertMany(products)
     console.log(`Products inserted on the DB`);
