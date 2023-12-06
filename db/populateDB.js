@@ -168,7 +168,43 @@ const MONGO_URI =
     link: "https://www.vinted.pt/items/3545176775-capa-de-dock-da-nintendo-switch-super-mario",
     description: ["Conjunto exclusivo de apoios de Dock para Nintendo Switch, cada um uma obra de arte única.", "Impressos em 3D, esses suportes são meticulosamente pintados à mão para refletir detalhes impressionantes.", "Escolha entre uma variedade de estilos, incluindo o mundo pixelado do Minecraft,  um mundo cristalizado , a alegria do Super Mario, o mistério do Octopus, as majestosas  nuvens e o encanto épico de Legend of Zelda." , "Eleve sua experiência de jogo com esses suportes personalizados que combinam funcionalidade e estética."],
     images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701519672/baseNintendoSuperMarioFrente_bbjg93.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519673/baseNintendoSuperMarioFrenteII_mgkttk.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519676/baseNintendoSuperMarioFrenteIII_vmmwgn.jpg"] 
+  },
+  {
+    name: "Frostmourne",
+    price: 120,
+    quantity:0,
+    link: "1",
+    description: ["Adquira a impressionante réplica da espada Frostmourne em 3D, com impressionantes 120cm de comprimento.", , "Cada detalhe meticuloso é destacado pela habilidade artesanal, resultando em uma peça única e imponente." , "Pintada à mão com precisão, esta espada traz à vida a icônica arma do universo de Warcraft, perfeita para colecionadores e entusiastas que buscam uma peça autêntica e visualmente impressionante."],
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701886760/HMS/frostmourneFrente_q5uge4.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701886760/HMS/frostmourneFrente2_ygh0pu.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701886760/HMS/frostmourneCorpo_a3buns.jpg"] 
   }
+  ,
+  {
+    name: "Esfera Disney",
+    price: 12,
+    quantity:1,
+    link: "https://www.vinted.pt/items/3452439439-decoracao-de-natal-luminosa-disney",
+    description: ["Ilumine sua coleção com a esfera Disney em litografia, uma obra de arte em miniatura com 8 cm de diâmetro.", , "Cada detalhe mágico é acentuado pela técnica de litografia, proporcionando uma experiência visual encantadora." , "Esta peça única é uma adição deslumbrante para os fãs da Disney, capturando a magia em um formato compacto e brilhante, perfeito para exibir com orgulho em qualquer espaço."],
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701887099/HMS/esferaDisney2_nkpdg5.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701887098/HMS/esferaDisney3_ssf61n.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701887098/HMS/esferaDisney_b4gnlh.jpg"] 
+  }
+  ,
+  {
+    name: "Decorações de Natal",
+    price: 3.5,
+    quantity:1,
+    link: "https://www.vinted.pt/items/3545146882-decoracao-natal",
+    description: ["Decore sua árvore com charme personalizado!", , "Nossas decorações de Natal são pintadas à mão e podem ser personalizadas com o nome que escolher." , "Adicione um toque especial e único à sua celebração."],
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701887611/HMS/decora%C3%A7%C3%A3oNatal3_oz8bvv.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701887610/HMS/decora%C3%A7%C3%A3oNatal2_lktydz.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701887610/HMS/decora%C3%A7%C3%A3oNatal1_rrdgnv.jpg"] 
+  }  
+  ,
+  {
+    name: "Decorações de Natal Harry Potter",
+    price: 30,
+    quantity:1,
+    link: "https://www.vinted.pt/items/3545142042-decoracao-natal-harry-potter",
+    description: ["Decore sua árvore com encanto mágico de Harry Potter.", , "Conjunto de ornamentos temáticos icónicos para uma celebração natalicia cheia de magia."],
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701888122/HMS/decora%C3%A7%C3%A3oHarry_pgipec.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701888121/HMS/decora%C3%A7%C3%A3oHarry3_ytbzbk.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701888121/HMS/decora%C3%A7%C3%A3oHarry2_ntpodp.jpg"] 
+  }
+  
 
   
   ]
