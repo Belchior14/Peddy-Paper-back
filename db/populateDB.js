@@ -143,7 +143,7 @@ const MONGO_URI =
     quantity:1,
     link: "https://www.vinted.pt/items/3712230356-suporte-de-esponja-de-cozinha-de-the-simpsons",
     description: ["Um suporte de esponja para lava-louça do Homer Simpson, impresso em 3D e pintado à mão para adicionar um toque de diversão à sua cozinha."],
-    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701518410/homerFrente_z9gx6g.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518414/homerTr%C3%A1s_skc13i.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518411/homerLado_bqqixi.jpg"] 
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701518411/HMS/homerLado_bqqixi.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518410/HMS/homerFrente_z9gx6g.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518414/HMS/homerTr%C3%A1s_skc13i.jpg"] 
   },
   {
     name: "Capa de Nintendo Switch Minecraft",
@@ -151,7 +151,7 @@ const MONGO_URI =
     quantity:1,
     link: "https://www.vinted.pt/items/3712188324-capa-de-nintendo-switch-minecraft",
     description: ["Conjunto exclusivo de apoios de Dock para Nintendo Switch, cada um uma obra de arte única.", "Impressos em 3D, esses suportes são meticulosamente pintados à mão para refletir detalhes impressionantes.", "Escolha entre uma variedade de estilos, incluindo o mundo pixelado do Minecraft,  um mundo cristalizado , a alegria do Super Mario, o mistério do Octopus, as majestosas  nuvens e o encanto épico de Legend of Zelda." , "Eleve sua experiência de jogo com esses suportes personalizados que combinam funcionalidade e estética."],
-    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701519114/baseNintendoMineCraftFrente_wcvriy.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519110/baseNintendoMineCraftConsola_txpjrv.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519114/baseNintendoMineCraftFrente_wcvriy.jpg"] 
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701519112/HMS/baseNintendoMineCraftLado_yu9ksy.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519114/HMS/baseNintendoMineCraftFrente_wcvriy.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519110/HMS/baseNintendoMineCraftConsola_txpjrv.jpg"] 
   },
   {
     name: "Capa de dock de Nintendo Switch Octopus",
@@ -159,7 +159,7 @@ const MONGO_URI =
     quantity:1,
     link: "https://www.vinted.pt/items/3712206601-capa-de-dock-de-nintendo-switch-octopus",
     description: ["Conjunto exclusivo de apoios de Dock para Nintendo Switch, cada um uma obra de arte única.", "Impressos em 3D, esses suportes são meticulosamente pintados à mão para refletir detalhes impressionantes.", "Escolha entre uma variedade de estilos, incluindo o mundo pixelado do Minecraft,  um mundo cristalizado , a alegria do Super Mario, o mistério do Octopus, as majestosas  nuvens e o encanto épico de Legend of Zelda." , "Eleve sua experiência de jogo com esses suportes personalizados que combinam funcionalidade e estética."],
-    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701518854/baseNintendo1Frente_imjzxf.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518852/baseNintendo1Consola_bhynba.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518851/baseNintendo1Tr%C3%A1s_m2btjt.jpg"] 
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701518854/HMS/baseNintendo1Frente_imjzxf.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518851/HMS/baseNintendo1Tr%C3%A1s_m2btjt.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701518852/HMS/baseNintendo1Consola_bhynba.jpg"] 
   },
   {
     name: "Capa de dock da Nintendo Switch Super Mario",
@@ -167,7 +167,7 @@ const MONGO_URI =
     quantity:1,
     link: "https://www.vinted.pt/items/3545176775-capa-de-dock-da-nintendo-switch-super-mario",
     description: ["Conjunto exclusivo de apoios de Dock para Nintendo Switch, cada um uma obra de arte única.", "Impressos em 3D, esses suportes são meticulosamente pintados à mão para refletir detalhes impressionantes.", "Escolha entre uma variedade de estilos, incluindo o mundo pixelado do Minecraft,  um mundo cristalizado , a alegria do Super Mario, o mistério do Octopus, as majestosas  nuvens e o encanto épico de Legend of Zelda." , "Eleve sua experiência de jogo com esses suportes personalizados que combinam funcionalidade e estética."],
-    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701519672/baseNintendoSuperMarioFrente_bbjg93.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519673/baseNintendoSuperMarioFrenteII_mgkttk.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519676/baseNintendoSuperMarioFrenteIII_vmmwgn.jpg"] 
+    images: ["https://res.cloudinary.com/dmbxv880g/image/upload/v1701519672/HMS/baseNintendoSuperMarioFrente_bbjg93.jpg" , "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519673/HMS/baseNintendoSuperMarioFrenteII_mgkttk.jpg", "https://res.cloudinary.com/dmbxv880g/image/upload/v1701519676/HMS/baseNintendoSuperMarioFrenteIII_vmmwgn.jpg"] 
   },
   {
     name: "Frostmourne",
